@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var btn = document.getElementById('submitBtn');
     var inputField = document.getElementById('data');
     var outputField = document.getElementById('res');
     var errField = document.getElementById('errorBox');
 
-    btn.onclick = async function() {
+    btn.onclick = async function () {
         errField.innerText = "";
         outputField.innerText = "loading...";
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         try {
-            var res = await fetch("http://localhost:3000/bfhl", {
+            var res = await fetch("https://fullstack-api-tester.onrender.com/bfhl", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
