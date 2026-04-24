@@ -1,0 +1,14 @@
+{
+  "name": "bajaj-test",
+  "version": "1.0.0",
+  "description": "BFHL challenge submission",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "node --watch backend/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
